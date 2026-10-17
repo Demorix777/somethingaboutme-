@@ -1,0 +1,878 @@
+{
+  "10": {
+    "total": null
+  },
+  "20": {
+    "total": null
+  },
+  "30": {
+    "total": null
+  },
+  "40": {
+    "total": null
+  },
+  "50": {
+    "total": null
+  },
+  "60": {
+    "total": null
+  },
+  "70": {
+    "total": null
+  },
+  "80": {
+    "total": null
+  },
+  "100": {
+    "total": null
+  },
+  "130": {
+    "total": null
+  },
+  "220": {
+    "total": 69,
+    "achieved": 31,
+    "perfect": false
+  },
+  "240": {
+    "total": 147,
+    "achieved": 71,
+    "perfect": false
+  },
+  "280": {
+    "total": null
+  },
+  "300": {
+    "total": 54,
+    "achieved": 0,
+    "perfect": false
+  },
+  "320": {
+    "total": null
+  },
+  "360": {
+    "total": null
+  },
+  "400": {
+    "total": 15,
+    "achieved": 8,
+    "perfect": false
+  },
+  "440": {
+    "total": 520,
+    "achieved": 29,
+    "perfect": false
+  },
+  "500": {
+    "total": 73,
+    "achieved": 21,
+    "perfect": false
+  },
+  "550": {
+    "total": 101,
+    "achieved": 17,
+    "perfect": false
+  },
+  "620": {
+    "total": 51,
+    "achieved": 17,
+    "perfect": false
+  },
+  "730": {
+    "total": 1,
+    "achieved": 1,
+    "perfect": true
+  },
+  "1250": {
+    "total": 285,
+    "achieved": 0,
+    "perfect": false
+  },
+  "3590": {
+    "total": 21,
+    "achieved": 4,
+    "perfect": false
+  },
+  "4000": {
+    "total": 29,
+    "achieved": 18,
+    "perfect": false
+  },
+  "4500": {
+    "total": null
+  },
+  "12210": {
+    "total": 55,
+    "achieved": 5,
+    "perfect": false
+  },
+  "20510": {
+    "total": null
+  },
+  "22300": {
+    "total": null
+  },
+  "41700": {
+    "total": null
+  },
+  "49520": {
+    "total": 75,
+    "achieved": 0,
+    "perfect": false
+  },
+  "107410": {
+    "total": 123,
+    "achieved": 3,
+    "perfect": false
+  },
+  "108600": {
+    "total": null
+  },
+  "214340": {
+    "total": 19,
+    "achieved": 0,
+    "perfect": false
+  },
+  "218620": {
+    "total": 1342,
+    "achieved": 9,
+    "perfect": false
+  },
+  "220240": {
+    "total": 44,
+    "achieved": 0,
+    "perfect": false
+  },
+  "232090": {
+    "total": 307,
+    "achieved": 1,
+    "perfect": false
+  },
+  "233270": {
+    "total": 19,
+    "achieved": 0,
+    "perfect": false
+  },
+  "233450": {
+    "total": 18,
+    "achieved": 6,
+    "perfect": false
+  },
+  "238960": {
+    "total": 127,
+    "achieved": 0,
+    "perfect": false
+  },
+  "239030": {
+    "total": 13,
+    "achieved": 4,
+    "perfect": false
+  },
+  "242760": {
+    "total": 45,
+    "achieved": 0,
+    "perfect": false
+  },
+  "244210": {
+    "total": 709,
+    "achieved": 1,
+    "perfect": false
+  },
+  "246620": {
+    "total": 250,
+    "achieved": 5,
+    "perfect": false
+  },
+  "252490": {
+    "total": 116,
+    "achieved": 14,
+    "perfect": false
+  },
+  "255710": {
+    "total": 135,
+    "achieved": 3,
+    "perfect": false
+  },
+  "264710": {
+    "total": 17,
+    "achieved": 1,
+    "perfect": false
+  },
+  "265930": {
+    "total": 127,
+    "achieved": 24,
+    "perfect": false
+  },
+  "271590": {
+    "total": 77,
+    "achieved": 42,
+    "perfect": false
+  },
+  "275850": {
+    "total": 27,
+    "achieved": 0,
+    "perfect": false
+  },
+  "286690": {
+    "total": 49,
+    "achieved": 0,
+    "perfect": false
+  },
+  "287390": {
+    "total": 49,
+    "achieved": 0,
+    "perfect": false
+  },
+  "291550": {
+    "total": 65,
+    "achieved": 0,
+    "perfect": false
+  },
+  "292030": {
+    "total": 78,
+    "achieved": 2,
+    "perfect": false
+  },
+  "297000": {
+    "total": 13,
+    "achieved": 0,
+    "perfect": false
+  },
+  "298630": {
+    "total": 37,
+    "achieved": 0,
+    "perfect": false
+  },
+  "303610": {
+    "total": 10,
+    "achieved": 10,
+    "perfect": true
+  },
+  "304930": {
+    "total": 95,
+    "achieved": 2,
+    "perfect": false
+  },
+  "312660": {
+    "total": 85,
+    "achieved": 0,
+    "perfect": false
+  },
+  "319510": {
+    "total": null
+  },
+  "322170": {
+    "total": 547,
+    "achieved": 42,
+    "perfect": false
+  },
+  "360430": {
+    "total": 85,
+    "achieved": 0,
+    "perfect": false
+  },
+  "362890": {
+    "total": 50,
+    "achieved": 9,
+    "perfect": false
+  },
+  "365670": {
+    "total": null
+  },
+  "377160": {
+    "total": 84,
+    "achieved": 1,
+    "perfect": false
+  },
+  "379720": {
+    "total": 54,
+    "achieved": 0,
+    "perfect": false
+  },
+  "388060": {
+    "total": 24,
+    "achieved": 0,
+    "perfect": false
+  },
+  "391540": {
+    "total": 0,
+    "achieved": 0,
+    "perfect": false
+  },
+  "397540": {
+    "total": 81,
+    "achieved": 0,
+    "perfect": false
+  },
+  "412020": {
+    "total": 68,
+    "achieved": 0,
+    "perfect": false
+  },
+  "413150": {
+    "total": 49,
+    "achieved": 0,
+    "perfect": false
+  },
+  "431960": {
+    "total": 17,
+    "achieved": 2,
+    "perfect": false
+  },
+  "475090": {
+    "total": 34,
+    "achieved": 0,
+    "perfect": false
+  },
+  "489630": {
+    "total": 166,
+    "achieved": 0,
+    "perfect": false
+  },
+  "489830": {
+    "total": 75,
+    "achieved": 2,
+    "perfect": false
+  },
+  "503560": {
+    "total": 18,
+    "achieved": 1,
+    "perfect": false
+  },
+  "508440": {
+    "total": 64,
+    "achieved": 16,
+    "perfect": false
+  },
+  "518790": {
+    "total": 160,
+    "achieved": 0,
+    "perfect": false
+  },
+  "521890": {
+    "total": 17,
+    "achieved": 17,
+    "perfect": true
+  },
+  "552520": {
+    "total": 72,
+    "achieved": 3,
+    "perfect": false
+  },
+  "578080": {
+    "total": 37,
+    "achieved": 2,
+    "perfect": false
+  },
+  "578330": {
+    "total": 48,
+    "achieved": 3,
+    "perfect": false
+  },
+  "582660": {
+    "total": 0,
+    "achieved": 0,
+    "perfect": false
+  },
+  "588430": {
+    "total": 35,
+    "achieved": 1,
+    "perfect": false
+  },
+  "601360": {
+    "total": 21,
+    "achieved": 1,
+    "perfect": false
+  },
+  "603850": {
+    "total": 21,
+    "achieved": 7,
+    "perfect": false
+  },
+  "613100": {
+    "total": 96,
+    "achieved": 1,
+    "perfect": false
+  },
+  "617670": {
+    "total": 800,
+    "achieved": 800,
+    "perfect": true
+  },
+  "629520": {
+    "total": null
+  },
+  "645630": {
+    "total": 60,
+    "achieved": 0,
+    "perfect": false
+  },
+  "646910": {
+    "total": 34,
+    "achieved": 1,
+    "perfect": false
+  },
+  "648800": {
+    "total": 104,
+    "achieved": 4,
+    "perfect": false
+  },
+  "666220": {
+    "total": 66,
+    "achieved": 1,
+    "perfect": false
+  },
+  "674940": {
+    "total": 28,
+    "achieved": 20,
+    "perfect": false
+  },
+  "700580": {
+    "total": 6,
+    "achieved": 0,
+    "perfect": false
+  },
+  "704850": {
+    "total": 33,
+    "achieved": 3,
+    "perfect": false
+  },
+  "714070": {
+    "total": 31,
+    "achieved": 1,
+    "perfect": false
+  },
+  "729720": {
+    "total": 21,
+    "achieved": 0,
+    "perfect": false
+  },
+  "739630": {
+    "total": 54,
+    "achieved": 2,
+    "perfect": false
+  },
+  "766570": {
+    "total": 145,
+    "achieved": 0,
+    "perfect": false
+  },
+  "784150": {
+    "total": 17,
+    "achieved": 2,
+    "perfect": false
+  },
+  "788770": {
+    "total": null
+  },
+  "837470": {
+    "total": 25,
+    "achieved": 0,
+    "perfect": false
+  },
+  "842180": {
+    "total": 84,
+    "achieved": 21,
+    "perfect": false
+  },
+  "848450": {
+    "total": 13,
+    "achieved": 0,
+    "perfect": false
+  },
+  "859570": {
+    "total": 10,
+    "achieved": 2,
+    "perfect": false
+  },
+  "860860": {
+    "total": 10,
+    "achieved": 10,
+    "perfect": true
+  },
+  "924970": {
+    "total": 93,
+    "achieved": 5,
+    "perfect": false
+  },
+  "945360": {
+    "total": 33,
+    "achieved": 26,
+    "perfect": false
+  },
+  "960420": {
+    "total": 17,
+    "achieved": 8,
+    "perfect": false
+  },
+  "1012880": {
+    "total": 60,
+    "achieved": 28,
+    "perfect": false
+  },
+  "1029690": {
+    "total": 71,
+    "achieved": 0,
+    "perfect": false
+  },
+  "1053680": {
+    "total": null
+  },
+  "1091500": {
+    "total": 57,
+    "achieved": 45,
+    "perfect": false
+  },
+  "1092720": {
+    "total": null
+  },
+  "1096710": {
+    "total": null
+  },
+  "1118200": {
+    "total": 17,
+    "achieved": 17,
+    "perfect": true
+  },
+  "1130410": {
+    "total": 22,
+    "achieved": 5,
+    "perfect": false
+  },
+  "1149620": {
+    "total": 101,
+    "achieved": 75,
+    "perfect": false
+  },
+  "1167630": {
+    "total": 27,
+    "achieved": 18,
+    "perfect": false
+  },
+  "1174180": {
+    "total": 51,
+    "achieved": 27,
+    "perfect": false
+  },
+  "1206560": {
+    "total": 54,
+    "achieved": 46,
+    "perfect": false
+  },
+  "1222140": {
+    "total": 48,
+    "achieved": 2,
+    "perfect": false
+  },
+  "1222670": {
+    "total": null
+  },
+  "1238840": {
+    "total": 50,
+    "achieved": 0,
+    "perfect": false
+  },
+  "1239690": {
+    "total": 44,
+    "achieved": 15,
+    "perfect": false
+  },
+  "1285190": {
+    "total": 63,
+    "achieved": 0,
+    "perfect": false
+  },
+  "1313140": {
+    "total": 57,
+    "achieved": 1,
+    "perfect": false
+  },
+  "1422450": {
+    "total": null
+  },
+  "1449560": {
+    "total": 68,
+    "achieved": 4,
+    "perfect": false
+  },
+  "1466640": {
+    "total": 12,
+    "achieved": 12,
+    "perfect": true
+  },
+  "1546970": {
+    "total": 29,
+    "achieved": 1,
+    "perfect": false
+  },
+  "1546990": {
+    "total": 34,
+    "achieved": 2,
+    "perfect": false
+  },
+  "1547000": {
+    "total": 35,
+    "achieved": 9,
+    "perfect": false
+  },
+  "1659040": {
+    "total": 83,
+    "achieved": 7,
+    "perfect": false
+  },
+  "1671340": {
+    "total": 3,
+    "achieved": 3,
+    "perfect": true
+  },
+  "1677740": {
+    "total": 36,
+    "achieved": 26,
+    "perfect": false
+  },
+  "1681430": {
+    "total": 27,
+    "achieved": 0,
+    "perfect": false
+  },
+  "1818450": {
+    "total": 17,
+    "achieved": 0,
+    "perfect": false
+  },
+  "1836160": {
+    "total": 16,
+    "achieved": 3,
+    "perfect": false
+  },
+  "1902490": {
+    "total": null
+  },
+  "1943950": {
+    "total": 34,
+    "achieved": 1,
+    "perfect": false
+  },
+  "1966720": {
+    "total": null
+  },
+  "1977530": {
+    "total": 22,
+    "achieved": 3,
+    "perfect": false
+  },
+  "2062430": {
+    "total": 63,
+    "achieved": 29,
+    "perfect": false
+  },
+  "2248760": {
+    "total": 57,
+    "achieved": 7,
+    "perfect": false
+  },
+  "2291340": {
+    "total": 38,
+    "achieved": 28,
+    "perfect": false
+  },
+  "2313240": {
+    "total": 102,
+    "achieved": 102,
+    "perfect": true
+  },
+  "2313250": {
+    "total": 101,
+    "achieved": 101,
+    "perfect": true
+  },
+  "2369390": {
+    "total": 99,
+    "achieved": 5,
+    "perfect": false
+  },
+  "2423470": {
+    "total": 18,
+    "achieved": 1,
+    "perfect": false
+  },
+  "2427410": {
+    "total": 44,
+    "achieved": 3,
+    "perfect": false
+  },
+  "2427420": {
+    "total": 43,
+    "achieved": 0,
+    "perfect": false
+  },
+  "2427430": {
+    "total": 47,
+    "achieved": 0,
+    "perfect": false
+  },
+  "2527500": {
+    "total": 26,
+    "achieved": 0,
+    "perfect": false
+  },
+  "2551020": {
+    "total": 43,
+    "achieved": 12,
+    "perfect": false
+  },
+  "2555320": {
+    "total": 20,
+    "achieved": 20,
+    "perfect": true
+  },
+  "2559270": {
+    "total": 15,
+    "achieved": 8,
+    "perfect": false
+  },
+  "2582050": {
+    "total": null
+  },
+  "2667970": {
+    "total": 100,
+    "achieved": 100,
+    "perfect": true
+  },
+  "2687190": {
+    "total": 100,
+    "achieved": 100,
+    "perfect": true
+  },
+  "2694490": {
+    "total": null
+  },
+  "2709570": {
+    "total": 54,
+    "achieved": 0,
+    "perfect": false
+  },
+  "2743080": {
+    "total": 100,
+    "achieved": 100,
+    "perfect": true
+  },
+  "2755330": {
+    "total": 34,
+    "achieved": 34,
+    "perfect": true
+  },
+  "2776810": {
+    "total": 100,
+    "achieved": 100,
+    "perfect": true
+  },
+  "2835570": {
+    "total": 16,
+    "achieved": 9,
+    "perfect": false
+  },
+  "2844700": {
+    "total": 5,
+    "achieved": 5,
+    "perfect": true
+  },
+  "2881650": {
+    "total": 48,
+    "achieved": 1,
+    "perfect": false
+  },
+  "2890830": {
+    "total": 26,
+    "achieved": 6,
+    "perfect": false
+  },
+  "2901520": {
+    "total": 71,
+    "achieved": 54,
+    "perfect": false
+  },
+  "2920270": {
+    "total": 30,
+    "achieved": 3,
+    "perfect": false
+  },
+  "2977660": {
+    "total": 2,
+    "achieved": 2,
+    "perfect": true
+  },
+  "3092450": {
+    "total": null
+  },
+  "3097560": {
+    "total": null
+  },
+  "3149840": {
+    "total": 9,
+    "achieved": 1,
+    "perfect": false
+  },
+  "3240220": {
+    "total": 77,
+    "achieved": 45,
+    "perfect": false
+  },
+  "3241660": {
+    "total": null
+  },
+  "3263320": {
+    "total": 19,
+    "achieved": 4,
+    "perfect": false
+  },
+  "3419430": {
+    "total": 28,
+    "achieved": 9,
+    "perfect": false
+  },
+  "3435600": {
+    "total": 2,
+    "achieved": 2,
+    "perfect": true
+  },
+  "3478870": {
+    "total": 45,
+    "achieved": 3,
+    "perfect": false
+  },
+  "3527290": {
+    "total": 64,
+    "achieved": 46,
+    "perfect": false
+  },
+  "3892270": {
+    "total": 55,
+    "achieved": 4,
+    "perfect": false
+  },
+  "3949040": {
+    "total": 96,
+    "achieved": 0,
+    "perfect": false
+  },
+  "4001890": {
+    "total": 31,
+    "achieved": 0,
+    "perfect": false
+  },
+  "4147820": {
+    "total": 20,
+    "achieved": 11,
+    "perfect": false
+  },
+  "4245040": {
+    "total": null
+  },
+  "4465480": {
+    "total": null
+  },
+  "4576510": {
+    "total": null
+  }
+}
