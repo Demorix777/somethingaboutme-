@@ -1,0 +1,37 @@
+name: Update live stats
+
+on:
+  schedule:
+    - cron: "0 * * * *" # каждый час
+  workflow_dispatch: {} # ручной запуск из вкладки Actions
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch stats
+        env:
+          STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
+          INSTAGRAM_FOLLOWERS: ${{ secrets.INSTAGRAM_FOLLOWERS }}
+        run: python fetch_stats.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add stats.json steam_ach_cache.json
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Update live stats ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+            git push
+          fi
