@@ -1,17 +1,17 @@
 {
-  "updated": "2026-10-17T11:33:51.091841+00:00",
+  "updated": "2026-10-17T22:02:49.669328+00:00",
   "steam": {
-    "onlineState": "online",
+    "onlineState": 0,
     "inGame": null,
-    "gamesCount": null,
-    "hours": null,
+    "gamesCount": 0,
+    "hours": 0.0,
     "achievements": null,
     "perfect": null,
     "source": "steam"
   },
   "social": {
-    "youtube": 773,
+    "youtube": 776,
     "tiktok": 7,
-    "instagram": 9
+    "instagram": 10
   }
 }
