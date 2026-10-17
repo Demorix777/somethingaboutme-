@@ -7,7 +7,7 @@ on:
       - "fetch_stats.py"
       - ".github/workflows/update-stats.yml"
   schedule:
-    - cron: "*/10 * * * *" # каждые 10 минут
+    - cron: "*/5 * * * *" # каждые 5 минут (минимум GitHub Actions)
   workflow_dispatch: {} # ручной запуск из вкладки Actions
 
 permissions:
