@@ -90,6 +90,7 @@ def fetch_steam():
     out = {
         "onlineState": None,   # 0 offline, 1 online, 2 busy, 3 away, 5 trade, 6 play
         "inGame": None,
+        "lastlogoff": None,    # unix-время последнего выхода (когда офлайн)
         "gamesCount": None,
         "hours": None,
         "achievements": None,
@@ -118,6 +119,7 @@ def fetch_steam():
             f"?key={STEAM_API_KEY}&steamids={STEAM_ID64}"))
         p = j["response"]["players"][0]
         out["onlineState"] = p.get("personastate")
+        out["lastlogoff"] = p.get("lastlogoff")
         if p.get("gameextrainfo"):
             out["inGame"] = p["gameextrainfo"]
     except Exception:
