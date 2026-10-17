@@ -1,8 +1,9 @@
 {
-  "updated": "2026-10-17T22:07:11.119394+00:00",
+  "updated": "2026-10-17T22:18:28.086962+00:00",
   "steam": {
     "onlineState": 1,
-    "inGame": null,
+    "inGame": "MiSide",
+    "lastlogoff": 1792234706,
     "gamesCount": 190,
     "hours": 4159.4,
     "achievements": 2668,
