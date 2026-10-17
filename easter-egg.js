@@ -398,36 +398,39 @@
   /* ---------- Терминал ---------- */
   var termOpen = false;
   var wrongAttempts = 0;
+  function checkTermPassword(val) {
+    if (val === "2018") {
+      wrongAttempts = 0;
+      elTermBody.innerHTML = "<p>" + t("termPrompt") + val + "</p><p style='color:#0f0;font-weight:bold'>" + t("granted") + "</p>";
+      setTimeout(startHack, 500);
+    } else {
+      wrongAttempts++;
+      var deny = "<p>" + t("termPrompt") + val + "</p><p style='color:#f33'>" + t("denied") + "</p>";
+      if (wrongAttempts >= 2) deny += "<p style='color:#9a9a9a;font-style:italic'>" + t("hint") + "</p>";
+      elTermBody.innerHTML = deny;
+      setTimeout(function () { openTerminal(); }, 1400);
+    }
+    termOpen = false;
+  }
   function openTerminal() {
     elTerm.classList.add("open");
     termOpen = true;
+    document.body.style.overflow = "hidden";
     var html = "<p>" + t("termLine1") + "</p><p>" + t("termLine2") + "</p>";
     if (wrongAttempts >= 2) html += "<p style='color:#9a9a9a;font-style:italic'>" + t("hint") + "</p>";
-    html += "<p>" + t("termPrompt") + '<input id="egTermInput" type="text" inputmode="numeric" autocomplete="off" autocapitalize="off" spellcheck="false" style="background:transparent;border:none;outline:none;color:#3c3;font:inherit;width:170px;caret-color:#3c3"></p>';
+    html += '<form id="egTermForm" style="margin:0;display:inline"><span>' + t("termPrompt") + '</span><input id="egTermInput" type="text" inputmode="numeric" autocomplete="off" autocapitalize="off" spellcheck="false" style="background:transparent;border:none;outline:none;color:#3c3;font:inherit;width:170px;caret-color:#3c3"></form>';
     elTermBody.innerHTML = html;
     document.getElementById("egTermHead").textContent = t("termHead");
     var inp = document.getElementById("egTermInput");
-    setTimeout(function () { try { inp.focus(); } catch (err) {} }, 120);
+    var form = document.getElementById("egTermForm");
+    setTimeout(function () { try { inp.focus(); } catch (err) {} }, 150);
+    form.onsubmit = function (e) { e.preventDefault(); checkTermPassword(inp.value.trim()); return false; };
     inp.addEventListener("keydown", function (e) {
       if (e.key === "Escape") { closeTerminal(); return; }
-      if (e.key === "Enter") {
-        var val = inp.value.trim();
-        if (val === "2018") {
-          wrongAttempts = 0;
-          elTermBody.innerHTML = "<p>" + t("termPrompt") + val + "</p><p style='color:#0f0;font-weight:bold'>" + t("granted") + "</p>";
-          setTimeout(startHack, 500);
-        } else {
-          wrongAttempts++;
-          var deny = "<p>" + t("termPrompt") + val + "</p><p style='color:#f33'>" + t("denied") + "</p>";
-          if (wrongAttempts >= 2) deny += "<p style='color:#9a9a9a;font-style:italic'>" + t("hint") + "</p>";
-          elTermBody.innerHTML = deny;
-          setTimeout(function () { openTerminal(); }, 1400);
-        }
-        termOpen = false;
-      }
+      if (e.key === "Enter") { e.preventDefault(); checkTermPassword(inp.value.trim()); }
     });
   }
-  function closeTerminal() { elTerm.classList.remove("open"); termOpen = false; }
+  function closeTerminal() { elTerm.classList.remove("open"); termOpen = false; document.body.style.overflow = ""; }
   document.getElementById("egTermClose").onclick = closeTerminal;
   elTerm.onclick = function (e) { if (e.target === elTerm) closeTerminal(); };
 
