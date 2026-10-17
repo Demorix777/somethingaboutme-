@@ -1,6 +1,11 @@
 name: Update live stats
 
 on:
+  push:
+    paths:
+      - "stats.json"
+      - "fetch_stats.py"
+      - ".github/workflows/update-stats.yml"
   schedule:
     - cron: "0 * * * *" # каждый час
   workflow_dispatch: {} # ручной запуск из вкладки Actions
