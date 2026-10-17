@@ -63,19 +63,25 @@ def parse_count(s):
 
 
 def fetch_youtube_subs(handle):
-    html = http_get(f"https://www.youtube.com/@{handle}/about")
-    m = re.search(r'"content":"([0-9][0-9.,\u00a0 ]*[KMk]?) subscribers"', html)
-    if not m:
+    try:
+        html = http_get(f"https://www.youtube.com/@{handle}/about")
+        m = re.search(r'"content":"([0-9][0-9.,\u00a0 ]*[KMk]?) subscribers"', html)
+        if not m:
+            return None
+        return parse_count(m.group(1))
+    except Exception:
         return None
-    return parse_count(m.group(1))
 
 
 def fetch_tiktok_followers(handle):
-    html = http_get(f"https://www.tiktok.com/@{handle}")
-    m = re.search(r'"followerCount":(\d+)', html)
-    if not m:
+    try:
+        html = http_get(f"https://www.tiktok.com/@{handle}")
+        m = re.search(r'"followerCount":(\d+)', html)
+        if not m:
+            return None
+        return int(m.group(1))
+    except Exception:
         return None
-    return int(m.group(1))
 
 
 def fetch_steam():
@@ -183,16 +189,30 @@ def main():
         except Exception:
             prev = {}
 
+    prev_social = prev.get("social", {})
+
+    youtube = fetch_youtube_subs(YOUTUBE_HANDLE)
+    if youtube is None:
+        youtube = prev_social.get("youtube")
+
+    tiktok = fetch_tiktok_followers(TIKTOK_HANDLE)
+    if tiktok is None:
+        tiktok = prev_social.get("tiktok")
+
+    # Instagram is login-walled — use env value, else carry forward the last known.
+    instagram_raw = os.environ.get("INSTAGRAM_FOLLOWERS", "").strip()
+    try:
+        instagram = int(instagram_raw) if instagram_raw else (prev_social.get("instagram") or 9)
+    except Exception:
+        instagram = prev_social.get("instagram") or 9
+
     data = {
         "updated": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "steam": fetch_steam(),
         "social": {
-            "youtube": fetch_youtube_subs(YOUTUBE_HANDLE),
-            "tiktok": fetch_tiktok_followers(TIKTOK_HANDLE),
-            # Instagram is login-walled — carry forward the last known value.
-            "instagram": int(os.environ.get(
-                "INSTAGRAM_FOLLOWERS",
-                prev.get("social", {}).get("instagram") or 9)),
+            "youtube": youtube,
+            "tiktok": tiktok,
+            "instagram": instagram,
         },
     }
 
