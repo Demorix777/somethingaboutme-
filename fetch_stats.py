@@ -23,7 +23,7 @@ import time
 import datetime
 import urllib.request
 
-STEAM_ID64 = "76561198338679747"
+STEAM_ID64 = "76561198338694797"
 STEAM_CUSTOM = "Demorix777"
 STEAM_API_KEY = os.environ.get("STEAM_API_KEY", "").strip()
 
