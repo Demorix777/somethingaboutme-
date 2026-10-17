@@ -397,45 +397,39 @@
 
   /* ---------- Терминал ---------- */
   var termOpen = false;
-  var buffer = "";
   var wrongAttempts = 0;
   function openTerminal() {
     elTerm.classList.add("open");
     termOpen = true;
-    buffer = "";
     var html = "<p>" + t("termLine1") + "</p><p>" + t("termLine2") + "</p>";
     if (wrongAttempts >= 2) html += "<p style='color:#9a9a9a;font-style:italic'>" + t("hint") + "</p>";
-    html += "<p>" + t("termPrompt") + '<span class="eg-cursor"></span></p>';
+    html += "<p>" + t("termPrompt") + '<input id="egTermInput" type="text" inputmode="numeric" autocomplete="off" autocapitalize="off" spellcheck="false" style="background:transparent;border:none;outline:none;color:#3c3;font:inherit;width:170px;caret-color:#3c3"></p>';
     elTermBody.innerHTML = html;
     document.getElementById("egTermHead").textContent = t("termHead");
+    var inp = document.getElementById("egTermInput");
+    setTimeout(function () { try { inp.focus(); } catch (err) {} }, 120);
+    inp.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") { closeTerminal(); return; }
+      if (e.key === "Enter") {
+        var val = inp.value.trim();
+        if (val === "2018") {
+          wrongAttempts = 0;
+          elTermBody.innerHTML = "<p>" + t("termPrompt") + val + "</p><p style='color:#0f0;font-weight:bold'>" + t("granted") + "</p>";
+          setTimeout(startHack, 500);
+        } else {
+          wrongAttempts++;
+          var deny = "<p>" + t("termPrompt") + val + "</p><p style='color:#f33'>" + t("denied") + "</p>";
+          if (wrongAttempts >= 2) deny += "<p style='color:#9a9a9a;font-style:italic'>" + t("hint") + "</p>";
+          elTermBody.innerHTML = deny;
+          setTimeout(function () { openTerminal(); }, 1400);
+        }
+        termOpen = false;
+      }
+    });
   }
   function closeTerminal() { elTerm.classList.remove("open"); termOpen = false; }
   document.getElementById("egTermClose").onclick = closeTerminal;
   elTerm.onclick = function (e) { if (e.target === elTerm) closeTerminal(); };
-
-  document.addEventListener("keydown", function (e) {
-    if (!termOpen) return;
-    if (e.key === "Escape") { closeTerminal(); return; }
-    if (e.key === "Enter") {
-      if (buffer === "2018") {
-        wrongAttempts = 0;
-        elTermBody.innerHTML = "<p>" + t("termPrompt") + buffer + "</p><p style='color:#0f0;font-weight:bold'>" + t("granted") + "</p>";
-        setTimeout(startHack, 500);
-      } else {
-        wrongAttempts++;
-        var deny = "<p>" + t("termPrompt") + buffer + "</p><p style='color:#f33'>" + t("denied") + "</p>";
-        if (wrongAttempts >= 2) deny += "<p style='color:#9a9a9a;font-style:italic'>" + t("hint") + "</p>";
-        elTermBody.innerHTML = deny;
-        setTimeout(function () { openTerminal(); }, 1400);
-      }
-      termOpen = false;
-      buffer = "";
-      return;
-    }
-    if (e.key === "Backspace") { buffer = buffer.slice(0, -1); }
-    else if (e.key.length === 1) { buffer += e.key; }
-    elTermBody.innerHTML = "<p>" + t("termLine1") + "</p><p>" + t("termLine2") + "</p><p>" + t("termPrompt") + buffer.replace(/./g, "\u2022") + '<span class="eg-cursor"></span></p>';
-  });
 
   /* ---------- Взлом (матрица) ---------- */
   var matrixTimer = null;
