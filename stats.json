@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-18T16:19:25.361832+00:00",
+  "updated": "2026-10-18T18:42:42.156916+00:00",
   "steam": {
     "onlineState": 1,
-    "inGame": "Counter-Strike: Source",
+    "inGame": "Garry's Mod",
     "lastlogoff": 1792275728,
     "gamesCount": 190,
-    "hours": 4160.1,
+    "hours": 4160.9,
     "achievements": 2668,
     "perfect": 19,
     "source": "steam"
