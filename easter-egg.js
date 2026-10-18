@@ -418,7 +418,7 @@
     document.body.style.overflow = "hidden";
     var html = "<p>" + t("termLine1") + "</p><p>" + t("termLine2") + "</p>";
     if (wrongAttempts >= 2) html += "<p style='color:#9a9a9a;font-style:italic'>" + t("hint") + "</p>";
-    html += '<form id="egTermForm" style="margin:0;display:inline"><span>' + t("termPrompt") + '</span><input id="egTermInput" type="text" inputmode="numeric" autocomplete="off" autocapitalize="off" spellcheck="false" style="background:transparent;border:none;outline:none;color:#3c3;font:inherit;width:170px;caret-color:#3c3"></form>';
+    html += '<form id="egTermForm" style="margin:0;display:inline"><span>' + t("termPrompt") + '</span><input id="egTermInput" type="text" inputmode="numeric" enterkeyhint="go" autocomplete="off" autocapitalize="off" spellcheck="false" style="background:transparent;border:none;outline:none;color:#3c3;font:inherit;width:120px;caret-color:#3c3"><button type="submit" id="egTermGo" aria-label="OK" style="background:transparent;border:1px solid #1f6f1f;color:#3c3;font-family:inherit;font-size:15px;line-height:1;padding:7px 14px;margin-left:8px;cursor:pointer;border-radius:4px">OK</button></form>';
     elTermBody.innerHTML = html;
     document.getElementById("egTermHead").textContent = t("termHead");
     var inp = document.getElementById("egTermInput");
@@ -427,7 +427,6 @@
     form.onsubmit = function (e) { e.preventDefault(); checkTermPassword(inp.value.trim()); return false; };
     inp.addEventListener("keydown", function (e) {
       if (e.key === "Escape") { closeTerminal(); return; }
-      if (e.key === "Enter") { e.preventDefault(); checkTermPassword(inp.value.trim()); }
     });
   }
   function closeTerminal() { elTerm.classList.remove("open"); termOpen = false; document.body.style.overflow = ""; }

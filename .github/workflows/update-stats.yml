@@ -7,8 +7,10 @@ on:
       - "fetch_stats.py"
       - ".github/workflows/update-stats.yml"
   schedule:
-    - cron: "*/5 * * * *" # каждые 5 минут (минимум GitHub Actions)
+    - cron: "*/5 * * * *" # каждые 5 минут (минимум GitHub Actions; тайминг best-effort)
   workflow_dispatch: {} # ручной запуск из вкладки Actions
+  repository_dispatch:
+    types: [update-stats] # внешний надёжный планировщик (cron-job.org и т.п.)
 
 permissions:
   contents: write
