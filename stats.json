@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-18T18:42:42.156916+00:00",
+  "updated": "2026-10-18T21:02:53.387391+00:00",
   "steam": {
-    "onlineState": 1,
-    "inGame": "Garry's Mod",
-    "lastlogoff": 1792275728,
+    "onlineState": 0,
+    "inGame": null,
+    "lastlogoff": 1792355400,
     "gamesCount": 190,
-    "hours": 4160.9,
+    "hours": 4161.9,
     "achievements": 2668,
     "perfect": 19,
     "source": "steam"
