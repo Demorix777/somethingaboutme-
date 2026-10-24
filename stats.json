@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-24T05:02:13.405217+00:00",
+  "updated": "2026-10-24T09:25:14.109605+00:00",
   "steam": {
-    "onlineState": 0,
-    "inGame": null,
+    "onlineState": 1,
+    "inGame": "Cyberpunk 2077",
     "lastlogoff": 1792791301,
     "gamesCount": 190,
-    "hours": 4169.1,
+    "hours": 4170.1,
     "achievements": 2668,
     "perfect": 19,
     "source": "steam"
