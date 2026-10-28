@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-28T14:21:47.060811+00:00",
+  "updated": "2026-10-28T19:40:20.494577+00:00",
   "steam": {
     "onlineState": 1,
     "inGame": "Counter-Strike 2",
-    "lastlogoff": 1793171225,
+    "lastlogoff": 1793208700,
     "gamesCount": 190,
-    "hours": 4193.2,
+    "hours": 4197.2,
     "achievements": 2668,
     "perfect": 19,
     "source": "steam"
