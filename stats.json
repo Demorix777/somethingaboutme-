@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-04T18:34:52.917107+00:00",
+  "updated": "2026-11-04T23:54:28.017291+00:00",
   "steam": {
-    "onlineState": 1,
+    "onlineState": 0,
     "inGame": null,
-    "lastlogoff": 1793788132,
+    "lastlogoff": 1793827653,
     "gamesCount": 190,
-    "hours": 4243.6,
+    "hours": 4244.1,
     "achievements": 2668,
     "perfect": 19,
     "source": "steam"
