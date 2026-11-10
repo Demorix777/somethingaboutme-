@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-10T17:16:38.925381+00:00",
+  "updated": "2026-11-10T22:24:23.870284+00:00",
   "steam": {
-    "onlineState": 1,
-    "inGame": "Teardown",
-    "lastlogoff": 1794260733,
+    "onlineState": 0,
+    "inGame": null,
+    "lastlogoff": 1794347192,
     "gamesCount": 190,
-    "hours": 4281.0,
+    "hours": 4282.7,
     "achievements": 2668,
     "perfect": 19,
     "source": "steam"
