@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-10T09:37:27.694284+00:00",
+  "updated": "2026-11-10T17:16:38.925381+00:00",
   "steam": {
-    "onlineState": 0,
-    "inGame": null,
+    "onlineState": 1,
+    "inGame": "Teardown",
     "lastlogoff": 1794260733,
     "gamesCount": 190,
     "hours": 4281.0,
