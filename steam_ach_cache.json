@@ -806,7 +806,9 @@
     "total": null
   },
   "3097560": {
-    "total": null
+    "total": 0,
+    "achieved": 0,
+    "perfect": false
   },
   "3149840": {
     "total": 9,
